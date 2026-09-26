@@ -1,0 +1,175 @@
+@import './base.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f5;
+  color: #333;
+}
+
+.encabezado {
+  background: #2f6f4e;
+  color: white;
+  padding: 18px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.encabezado h1 {
+  margin: 0;
+}
+
+.encabezado p {
+  margin: 4px 0 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.router-link-active {
+  text-decoration: underline;
+}
+
+.contenido {
+  padding: 30px;
+}
+
+.inicio {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #2f6f4e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.modulo-clientes {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2f6f4e;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  padding: 9px;
+  margin-bottom: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #2f6f4e;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.acciones {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.secundario {
+  background: #6c757d;
+}
+
+.eliminar {
+  background: #b64242;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #edf4f0;
+}
+
+.acciones-tabla {
+  display: flex;
+  gap: 6px;
+}
+
+.tabla-contenedor {
+  overflow-x: auto;
+}
+
+@media (max-width: 850px) {
+  .encabezado {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .modulo-clientes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.busqueda input {
+  width: 100px;
+  margin: 0;
+}
+
+.mensaje {
+  padding: 10px;
+  background: #fff3cd;
+  border-radius: 4px;
+}
